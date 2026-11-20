@@ -80,7 +80,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning className={manrope.variable}>
-      <head>
+      <body className="min-h-screen flex flex-col font-sans selection:bg-olive selection:text-white">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -93,8 +93,6 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
-      </head>
-      <body className="min-h-screen flex flex-col font-sans selection:bg-olive selection:text-white">
         <ThemeProvider
           attribute="class"
           defaultTheme="light"

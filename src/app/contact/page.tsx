@@ -23,7 +23,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default function ContactPage() {
+interface Props {
+  searchParams?: Promise<{ service?: string; project?: string }>;
+}
+
+export default async function ContactPage({ searchParams }: Props) {
+  const resolvedParams = searchParams ? await searchParams : {};
+  const initialService = resolvedParams.service || "";
+  const initialProject = resolvedParams.project || "";
+
   const breadcrumbs = getBreadcrumbSchema([
     { name: "Home", url: "/" },
     { name: "Contact", url: "/contact" },
@@ -31,14 +39,12 @@ export default function ContactPage() {
 
   return (
     <div className="py-12 sm:py-20 bg-warm-bg dark:bg-darkSurface-bg transition-colors">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbs),
-          }}
-        />
-      </head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs),
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
         
@@ -124,7 +130,10 @@ export default function ContactPage() {
           {/* Form */}
           <div className="lg:col-span-7">
             <Suspense fallback={<div className="h-96 rounded-3xl bg-warm-card animate-pulse" />}>
-              <ContactForm />
+              <ContactForm
+                initialProjectType={initialService || (initialProject ? "New House Construction" : "")}
+                initialMessage={initialProject ? `Hi, I am interested in building a home similar to your project: ${initialProject}.` : ""}
+              />
             </Suspense>
           </div>
 

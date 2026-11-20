@@ -15,14 +15,12 @@ export function FAQ() {
 
   return (
     <section className="py-16 sm:py-24 bg-warm-card dark:bg-darkSurface-card border-y border-warm dark:border-darkSurface-border transition-colors">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(faqSchema),
-          }}
-        />
-      </head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqSchema),
+        }}
+      />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         

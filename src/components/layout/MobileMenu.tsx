@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone, ArrowRight, X } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -36,9 +37,22 @@ export function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
         <div>
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-warm dark:border-darkSurface-border">
-            <span className="font-bold text-lg tracking-tight text-warm-primary dark:text-darkSurface-text">
-              Sri Lakshmi <span className="text-olive">Construction</span>
-            </span>
+            <Link href="/" onClick={onClose} className="block py-1">
+              <div className="relative h-9 w-40">
+                <Image
+                  src="/images/brand/logo.svg"
+                  alt="Sri Lakshmi Construction"
+                  fill
+                  className="object-contain object-left dark:hidden"
+                />
+                <Image
+                  src="/images/brand/logo-dark.svg"
+                  alt="Sri Lakshmi Construction"
+                  fill
+                  className="object-contain object-left hidden dark:block"
+                />
+              </div>
+            </Link>
             <div className="flex items-center gap-2">
               <ThemeToggle />
               <button

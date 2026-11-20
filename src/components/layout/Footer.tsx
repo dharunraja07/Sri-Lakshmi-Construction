@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, Clock, MessageSquare, ShieldCheck, ArrowUpRight } from "lucide-react";
 import { COMPANY_INFO } from "@/data/company";
 import { SERVICES } from "@/data/services";
@@ -63,15 +64,21 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
           {/* Column 1: Brand & Philosophy (2 spans on lg) */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="inline-flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-olive flex items-center justify-center text-white">
-                <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-                  <path d="M12 2L2 9.5V11H4V20H9V14H15V20H20V11H22V9.5L12 2Z" />
-                </svg>
+            <Link href="/" className="inline-block py-1">
+              <div className="relative h-10 w-48">
+                <Image
+                  src="/images/brand/logo.svg"
+                  alt="Sri Lakshmi Construction"
+                  fill
+                  className="object-contain object-left dark:hidden"
+                />
+                <Image
+                  src="/images/brand/logo-dark.svg"
+                  alt="Sri Lakshmi Construction"
+                  fill
+                  className="object-contain object-left hidden dark:block"
+                />
               </div>
-              <span className="font-bold text-lg text-warm-primary dark:text-darkSurface-text">
-                Sri Lakshmi Construction
-              </span>
             </Link>
 
             <p className="text-sm text-warm-secondary dark:text-darkSurface-muted leading-relaxed max-w-sm">

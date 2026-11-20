@@ -9,9 +9,10 @@ import { contactFormSchema, ContactFormData } from "@/lib/validation";
 interface Props {
   initialProjectType?: string;
   initialLocation?: string;
+  initialMessage?: string;
 }
 
-export function ContactForm({ initialProjectType, initialLocation }: Props) {
+export function ContactForm({ initialProjectType, initialLocation, initialMessage }: Props) {
   const [serverState, setServerState] = useState<{
     status: "idle" | "submitting" | "success" | "error";
     message: string;
@@ -34,7 +35,7 @@ export function ContactForm({ initialProjectType, initialLocation }: Props) {
       email: "",
       projectType: initialProjectType || "",
       location: initialLocation || "",
-      message: "",
+      message: initialMessage || "",
     },
   });
 

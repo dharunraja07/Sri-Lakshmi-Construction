@@ -83,14 +83,12 @@ export default async function ProjectDetailPage({ params }: Props) {
 
   return (
     <div className="py-10 sm:py-16 bg-warm-bg dark:bg-darkSurface-bg transition-colors">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(breadcrumbs),
-          }}
-        />
-      </head>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbs),
+        }}
+      />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         

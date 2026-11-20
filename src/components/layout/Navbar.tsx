@@ -44,29 +44,24 @@ export function Navbar() {
             {/* Brand Logo & Name */}
             <Link
               href="/"
-              className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive rounded-lg"
+              className="flex items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive rounded-lg py-1"
               aria-label="Sri Lakshmi Construction - Return to homepage"
             >
-              {/* Logo Emblem Icon */}
-              <div className="relative w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-olive flex items-center justify-center text-white shadow-soft group-hover:scale-105 transition-transform">
-                <svg
-                  className="w-6 h-6 fill-current"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                >
-                  <path d="M12 2L2 9.5V11H4V20H9V14H15V20H20V11H22V9.5L12 2ZM12 4.5L18 9H6L12 4.5Z" />
-                </svg>
-              </div>
-
-              {/* Company Wordmark */}
-              <div className="flex flex-col">
-                <span className="font-extrabold tracking-tight text-lg sm:text-xl text-warm-primary dark:text-darkSurface-text leading-tight group-hover:text-olive dark:group-hover:text-olive-300 transition-colors">
-                  Sri Lakshmi
-                </span>
-                <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-olive dark:text-olive-400 uppercase">
-                  Construction
-                </span>
+              <div className="relative h-10 sm:h-12 w-44 sm:w-52 transition-transform duration-200 group-hover:scale-[1.02]">
+                <Image
+                  src="/images/brand/logo.svg"
+                  alt="Sri Lakshmi Construction Logo"
+                  fill
+                  priority
+                  className="object-contain object-left dark:hidden"
+                />
+                <Image
+                  src="/images/brand/logo-dark.svg"
+                  alt="Sri Lakshmi Construction Logo"
+                  fill
+                  priority
+                  className="object-contain object-left hidden dark:block"
+                />
               </div>
             </Link>
 
