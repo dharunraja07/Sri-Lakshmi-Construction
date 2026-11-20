@@ -34,10 +34,10 @@ export function Footer() {
               </div>
               <div>
                 <p className="font-bold text-sm text-warm-primary dark:text-darkSurface-text">
-                  3 Regional Hubs
+                  Office in Pudukkottai
                 </p>
                 <p className="text-xs text-warm-muted dark:text-darkSurface-muted">
-                  Pudukkottai • Karaikudi • Trichy
+                  Constructing across Pudukkottai, Karaikudi &amp; Trichy
                 </p>
               </div>
             </div>
@@ -108,7 +108,7 @@ export function Footer() {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-olive shrink-0 mt-0.5" />
-                <span>Pudukkottai (HQ) | Karaikudi | Trichy, Tamil Nadu</span>
+                <span>Office: Santhai Road, Pudukkottai – 622001, Tamil Nadu</span>
               </div>
             </div>
           </div>
@@ -190,46 +190,33 @@ export function Footer() {
             </ul>
           </div>
 
-          {/* Column 4: Service Locations */}
+          {/* Column 4: Office Location & Projects */}
           <div className="space-y-4">
             <p className="font-bold text-sm tracking-wider uppercase text-warm-primary dark:text-darkSurface-text">
-              Locations
+              Office Location
             </p>
-            <ul className="space-y-2.5 text-sm text-warm-secondary dark:text-darkSurface-muted">
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-olive dark:hover:text-olive-300 transition-colors"
-                >
-                  <strong className="block text-warm-primary dark:text-darkSurface-text font-semibold">
-                    Pudukkottai
-                  </strong>
-                  <span className="text-xs">Santhai Rd, Alangudi Rd, Nizam Colony</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-olive dark:hover:text-olive-300 transition-colors"
-                >
-                  <strong className="block text-warm-primary dark:text-darkSurface-text font-semibold">
-                    Karaikudi
-                  </strong>
-                  <span className="text-xs">Sekkalai, College Rd, Kalanivasal</span>
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-olive dark:hover:text-olive-300 transition-colors"
-                >
-                  <strong className="block text-warm-primary dark:text-darkSurface-text font-semibold">
-                    Trichy
-                  </strong>
-                  <span className="text-xs">KK Nagar, Thillai Nagar, Crawford</span>
-                </Link>
-              </li>
-            </ul>
+            <div className="space-y-3 text-sm text-warm-secondary dark:text-darkSurface-muted">
+              <div>
+                <strong className="block text-warm-primary dark:text-darkSurface-text font-semibold">
+                  Pudukkottai (Main Office)
+                </strong>
+                <p className="text-xs text-warm-secondary dark:text-darkSurface-muted mt-0.5 leading-relaxed">
+                  Santhai Road, Near Municipal Office, Pudukkottai – 622001
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-warm dark:border-darkSurface-border">
+                <span className="block text-xs font-bold uppercase tracking-wider text-olive dark:text-olive-400">
+                  Projects Built Across:
+                </span>
+                <p className="text-xs text-warm-primary dark:text-darkSurface-text font-medium mt-1">
+                  Pudukkottai • Karaikudi • Trichy
+                </p>
+                <p className="text-[11px] text-warm-muted dark:text-darkSurface-muted mt-0.5">
+                  (On-site construction &amp; direct engineer visits)
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

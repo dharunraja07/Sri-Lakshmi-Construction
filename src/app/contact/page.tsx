@@ -137,76 +137,51 @@ export default async function ContactPage({ searchParams }: Props) {
             </Suspense>
           </div>
 
-          {/* Regional Offices & Service Hubs */}
+          {/* Office & Service Areas */}
           <div className="lg:col-span-5 space-y-6">
             
             <div className="rounded-3xl bg-warm-card dark:bg-darkSurface-card border border-warm dark:border-darkSurface-border p-6 sm:p-8 shadow-card space-y-6">
               <div className="space-y-1">
                 <span className="text-xs font-bold uppercase tracking-widest text-olive dark:text-olive-400">
-                  Regional Coverage
+                  Office Location
                 </span>
                 <h3 className="text-xl font-bold text-warm-primary dark:text-darkSurface-text">
-                  Service Hubs in Tamil Nadu
+                  Our Office in Tamil Nadu
                 </h3>
               </div>
 
               {/* Pudukkottai (HQ) */}
-              <div className="p-4 rounded-xl bg-warm-bg dark:bg-darkSurface-cardElevated border border-warm dark:border-darkSurface-border space-y-2">
+              <div className="p-5 rounded-2xl bg-warm-bg dark:bg-darkSurface-cardElevated border border-warm dark:border-darkSurface-border space-y-3">
                 <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded bg-olive text-white text-[10px] font-bold">
-                    Headquarters
+                  <span className="px-2.5 py-0.5 rounded bg-olive text-white text-[10px] font-bold">
+                    Main Office
                   </span>
-                  <h4 className="font-bold text-sm text-warm-primary dark:text-darkSurface-text">
+                  <h4 className="font-bold text-base text-warm-primary dark:text-darkSurface-text">
                     Pudukkottai
                   </h4>
                 </div>
-                <p className="text-xs text-warm-secondary dark:text-darkSurface-muted leading-relaxed">
-                  Santhai Road, Near Municipal Office, Pudukkottai – 622001
+                <p className="text-sm text-warm-secondary dark:text-darkSurface-muted leading-relaxed">
+                  Santhai Road, Near Municipal Office, Pudukkottai – 622001, Tamil Nadu
                 </p>
-                <p className="text-[11px] text-warm-muted dark:text-darkSurface-muted">
-                  Serving: Rajagopalapuram, Alangudi Road, Machuvadi, Nizam Colony
-                </p>
-              </div>
-
-              {/* Karaikudi */}
-              <div className="p-4 rounded-xl bg-warm-bg dark:bg-darkSurface-cardElevated border border-warm dark:border-darkSurface-border space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded bg-olive/20 text-olive dark:text-olive-300 text-[10px] font-bold">
-                    Regional Hub
-                  </span>
-                  <h4 className="font-bold text-sm text-warm-primary dark:text-darkSurface-text">
-                    Karaikudi
-                  </h4>
+                <div className="pt-2 border-t border-warm dark:border-darkSurface-border text-xs text-warm-muted dark:text-darkSurface-muted space-y-1">
+                  <p><strong className="text-warm-primary dark:text-darkSurface-text">Direct Contact:</strong> +91 63807 72718</p>
+                  <p><strong className="text-warm-primary dark:text-darkSurface-text">Consultation Hours:</strong> 10:00 AM – 9:00 PM (Mon – Sun)</p>
                 </div>
+              </div>
+
+              {/* Project Execution Notice */}
+              <div className="p-5 rounded-2xl bg-olive/10 border border-olive/30 space-y-2">
+                <h4 className="font-bold text-xs uppercase tracking-wider text-olive dark:text-olive-400">
+                  Projects in Karaikudi &amp; Trichy
+                </h4>
                 <p className="text-xs text-warm-secondary dark:text-darkSurface-muted leading-relaxed">
-                  Sekkalai Main Road, Karaikudi – 630002
-                </p>
-                <p className="text-[11px] text-warm-muted dark:text-darkSurface-muted">
-                  Serving: College Road, Kottaiyur, Kalanivasal, Subramaniapuram
+                  Our single engineering office is located in Pudukkottai. We regularly execute turnkey construction and provide direct on-site supervision for homes and villas across <strong>Karaikudi</strong> and <strong>Trichy</strong> without the overhead of branch offices.
                 </p>
               </div>
 
-              {/* Trichy */}
-              <div className="p-4 rounded-xl bg-warm-bg dark:bg-darkSurface-cardElevated border border-warm dark:border-darkSurface-border space-y-2">
-                <div className="flex items-center gap-2">
-                  <span className="px-2 py-0.5 rounded bg-olive/20 text-olive dark:text-olive-300 text-[10px] font-bold">
-                    Regional Hub
-                  </span>
-                  <h4 className="font-bold text-sm text-warm-primary dark:text-darkSurface-text">
-                    Trichy
-                  </h4>
-                </div>
-                <p className="text-xs text-warm-secondary dark:text-darkSurface-muted leading-relaxed">
-                  KK Nagar Main Road, Trichy – 620021
-                </p>
-                <p className="text-[11px] text-warm-muted dark:text-darkSurface-muted">
-                  Serving: KK Nagar, Thillai Nagar, Srirangam, Kattur, Crawford
-                </p>
-              </div>
-
-              <div className="pt-2 border-t border-warm dark:border-darkSurface-border text-xs text-warm-muted dark:text-darkSurface-muted flex items-center gap-2">
+              <div className="pt-1 text-xs text-warm-muted dark:text-darkSurface-muted flex items-center gap-2">
                 <ShieldCheck className="w-4 h-4 text-olive shrink-0" />
-                <span>On-site visits available within 24 hours across all 3 regions.</span>
+                <span>On-site plot inspections available within 24 hours.</span>
               </div>
             </div>
 

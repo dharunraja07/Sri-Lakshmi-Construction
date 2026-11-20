@@ -53,10 +53,6 @@ export const COMPANY_INFO = {
     },
   ],
   officeAddress: {
-    headquarters: "Sri Lakshmi Construction, Pudukkottai - 622001, Tamil Nadu, India",
-    branches: [
-      "Karaikudi Center: Sekkalai Main Road, Karaikudi - 630002, Tamil Nadu",
-      "Trichy Office: KK Nagar Main Road, Trichy - 620021, Tamil Nadu",
-    ],
+    headquarters: "Sri Lakshmi Construction, Santhai Road, Near Municipal Office, Pudukkottai - 622001, Tamil Nadu, India",
   },
 };
