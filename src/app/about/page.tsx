@@ -15,14 +15,13 @@ import {
   Phone,
 } from "lucide-react";
 import { COMPANY_INFO } from "@/data/company";
-import { TEAM_MEMBERS } from "@/data/team";
 import { getTelUrl } from "@/lib/utils";
 import { getBreadcrumbSchema } from "@/lib/seo";
 
 export const metadata: Metadata = {
   title: "Building Trust for 13 Years | About Sri Lakshmi Construction",
   description:
-    "Learn about Sri Lakshmi Construction: 13+ years of building excellence, 60+ houses completed across Pudukkottai, Karaikudi, and Trichy. Meet our civil engineers and architects.",
+    "Learn about Sri Lakshmi Construction: 13+ years of building excellence, 60+ houses completed across Pudukkottai, Karaikudi, and Trichy. Explore our values, mission, and construction track record.",
   alternates: {
     canonical: "/about",
   },
@@ -194,56 +193,6 @@ export default function AboutPage() {
             <p className="text-sm text-warm-secondary dark:text-darkSurface-muted leading-relaxed">
               Uncompromising integrity, open-book material accountability, deep empathy for our client families, and respect for Vastu and local architectural heritage.
             </p>
-          </div>
-        </div>
-
-        {/* Our Team */}
-        <div className="space-y-12">
-          <div className="text-center max-w-2xl mx-auto space-y-3">
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-olive dark:text-olive-400">
-              The People Behind the Promise
-            </span>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-warm-primary dark:text-darkSurface-text">
-              Our Leadership &amp; Engineering Team
-            </h2>
-            <p className="text-sm sm:text-base text-warm-secondary dark:text-darkSurface-muted">
-              Dedicated civil engineers, licensed architects, and statutory liaison professionals guiding your build.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {TEAM_MEMBERS.map((member, idx) => (
-              <div
-                key={idx}
-                className="rounded-2xl overflow-hidden bg-warm-card dark:bg-darkSurface-card border border-warm dark:border-darkSurface-border shadow-card flex flex-col justify-between"
-              >
-                <div>
-                  <div className="relative aspect-square bg-warm-bg dark:bg-darkSurface-cardElevated overflow-hidden">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-5 space-y-2">
-                    <h3 className="font-bold text-base text-warm-primary dark:text-darkSurface-text">
-                      {member.name}
-                    </h3>
-                    <p className="text-xs font-semibold text-olive dark:text-olive-400">
-                      {member.role}
-                    </p>
-                    <p className="text-[11px] text-warm-muted dark:text-darkSurface-muted">
-                      {member.experience}
-                    </p>
-                    <p className="text-xs text-warm-secondary dark:text-darkSurface-muted pt-2 leading-relaxed">
-                      {member.bio}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
 
