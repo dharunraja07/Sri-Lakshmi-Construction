@@ -38,15 +38,15 @@ export function MobileMenu({ isOpen, onClose, navLinks }: MobileMenuProps) {
           {/* Header */}
           <div className="flex items-center justify-between pb-6 border-b border-warm dark:border-darkSurface-border">
             <Link href="/" onClick={onClose} className="block py-1">
-              <div className="relative h-9 w-40">
+              <div className="relative h-11 w-24">
                 <Image
-                  src="/images/brand/logo.svg"
+                  src="/images/brand/logo.webp"
                   alt="Sri Lakshmi Construction"
                   fill
                   className="object-contain object-left dark:hidden"
                 />
                 <Image
-                  src="/images/brand/logo-dark.svg"
+                  src="/images/brand/logo-dark.webp"
                   alt="Sri Lakshmi Construction"
                   fill
                   className="object-contain object-left hidden dark:block"

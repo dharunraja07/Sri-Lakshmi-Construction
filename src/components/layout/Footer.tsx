@@ -65,15 +65,15 @@ export function Footer() {
           {/* Column 1: Brand & Philosophy (2 spans on lg) */}
           <div className="lg:col-span-2 space-y-4">
             <Link href="/" className="inline-block py-1">
-              <div className="relative h-10 w-48">
+              <div className="relative h-14 w-32">
                 <Image
-                  src="/images/brand/logo.svg"
+                  src="/images/brand/logo.webp"
                   alt="Sri Lakshmi Construction"
                   fill
                   className="object-contain object-left dark:hidden"
                 />
                 <Image
-                  src="/images/brand/logo-dark.svg"
+                  src="/images/brand/logo-dark.webp"
                   alt="Sri Lakshmi Construction"
                   fill
                   className="object-contain object-left hidden dark:block"

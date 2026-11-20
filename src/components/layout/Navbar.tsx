@@ -47,16 +47,16 @@ export function Navbar() {
               className="flex items-center group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-olive rounded-lg py-1"
               aria-label="Sri Lakshmi Construction - Return to homepage"
             >
-              <div className="relative h-10 sm:h-12 w-44 sm:w-52 transition-transform duration-200 group-hover:scale-[1.02]">
+              <div className="relative h-12 sm:h-14 w-28 sm:w-32 transition-transform duration-200 group-hover:scale-105">
                 <Image
-                  src="/images/brand/logo.svg"
+                  src="/images/brand/logo.webp"
                   alt="Sri Lakshmi Construction Logo"
                   fill
                   priority
                   className="object-contain object-left dark:hidden"
                 />
                 <Image
-                  src="/images/brand/logo-dark.svg"
+                  src="/images/brand/logo-dark.webp"
                   alt="Sri Lakshmi Construction Logo"
                   fill
                   priority
