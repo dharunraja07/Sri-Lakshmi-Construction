@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #F5EFE0;
+    --card-surface: #FCFAF6;
+    --card-elevated: #FFFFFF;
+    --border-color: #E5DEC9;
+    --border-strong: #D4CBB3;
+    --text-primary: #1F1F1F;
+    --text-secondary: #635F54;
+    --text-muted: #807B6E;
+    --olive-primary: #5C6B2E;
+    --olive-hover: #7A8F46;
+  }
+
+  .dark {
+    --bg-main: #131209;
+    --card-surface: #1F1F1F;
+    --card-elevated: #26251E;
+    --border-color: #302D22;
+    --border-strong: #454133;
+    --text-primary: #F5EFE0;
+    --text-secondary: #C2BDAF;
+    --text-muted: #8F8A7D;
+    --olive-primary: #5C6B2E;
+    --olive-hover: #7A8F46;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-manrope), sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    min-height: 100vh;
+    transition: background-color 0.25s ease, color 0.25s ease;
+  }
+
+  a, button, [role="button"] {
+    cursor: pointer;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    outline: 2px solid #5C6B2E;
+    outline-offset: 3px;
+  }
+}
+
+@layer utilities {
+  .bg-warm-bg {
+    background-color: var(--bg-main);
+  }
+  .bg-warm-card {
+    background-color: var(--card-surface);
+  }
+  .bg-warm-elevated {
+    background-color: var(--card-elevated);
+  }
+  .border-warm {
+    border-color: var(--border-color);
+  }
+  .border-warm-strong {
+    border-color: var(--border-strong);
+  }
+  .text-warm-primary {
+    color: var(--text-primary);
+  }
+  .text-warm-secondary {
+    color: var(--text-secondary);
+  }
+  .text-warm-muted {
+    color: var(--text-muted);
+  }
+}
+
+/* Mod Garage style subtle keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
